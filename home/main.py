@@ -84,7 +84,7 @@ def get_external_hook_paths():
 	return ["%s/external" % app.folder_path for app in get_local_apps() if is_file("%s/external.py" % app.folder_path)]
 
 def low_power():
-	ugfx.backlight(0)
+	# ugfx.backlight(0)
 	ugfx.power_mode(ugfx.POWER_OFF)
 
 
